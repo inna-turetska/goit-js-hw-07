@@ -4,9 +4,9 @@ function getRandomHexColor() {
     .padStart(6, 0)}`;
 }
  const box = document.querySelector("#boxes");
-    const btnCreate = document.querySelector(".btnCreate");
-    const btnDestroy = document.querySelector(".btnDestroy");
-    const inpNumber = document.querySelector(".inpNumber");
+  const btnCreate = document.querySelector(".btnCreate");
+  const btnDestroy = document.querySelector(".btnDestroy");
+  const inpNumber = document.querySelector(".inpNumber");
 
 
     const createSquares = () => {
@@ -30,6 +30,7 @@ function getRandomHexColor() {
    
     const destroySquares = () => {
       box.innerHTML = "";
+      inpNumber.value = "";
     };
 
 
